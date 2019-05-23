@@ -1,0 +1,236 @@
+
+    .ukryj{display: none}
+    .pokaz{display: initial}
+    
+    
+    body, html{
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        max-width: 100%;
+        background-color: rgb(165, 206, 245);
+    max-height: 100%;
+       margin: 0;
+        padding: 0;
+    position: relative;
+    /* background-image: url( corgi.jpeg);
+    background-repeat: no-repeat; */
+    
+    }
+    #tlo img{
+width: 33%;
+float:left;
+
+    }
+    #strzalka{
+        max-width: 5%;
+        position: absolute;
+        left:0;
+    }
+    
+       
+        .wrapper{
+    padding: 20px 0;
+            display: grid;
+            grid-template-columns: 24% 24% 24% 24%;
+            grid-gap:10px; 
+            font-size: 1.8rem;
+        
+            
+     
+        }
+        .wrapper a{
+            text-decoration: none;
+            color:black;
+        }
+        .wrapper a:hover{
+            color:rgb(40, 119, 238);
+        }
+       #jakwytresowac2{
+           max-width: 100%;
+           height:auto ;
+        
+        
+       
+       }
+       .noactive{
+           opacity: .5;
+       }
+       .active{
+           width:80%;
+       }
+       #marwel2{
+        max-width: 80%;
+        height:auto ;
+        float: left;
+      
+        
+       }
+        #container{
+            max-width: 100%;
+            padding: 0;
+        }
+        
+        #jeden{
+            font-size: 24px;
+        }
+        
+        #jumbo{
+          
+          max-width: 100%;
+          height: auto;
+          left:0;
+            /* position: absolute;
+            z-index: 0; */
+        }
+       
+       
+        #test{
+            position: absolute;
+            top:40%;
+          width:100%;
+          margin:0 auto;
+          padding: 0;
+            font-size: 24px;
+           color:red;
+        
+
+        } 
+        
+        #seans{
+            font-size:22px;
+           height: 60px;
+         
+        }
+      
+        .wrapper1 {
+           
+                
+    
+            
+           visibility: hidden;
+                color:green;
+             display: grid;
+             grid-template-columns: 24% 24% 24% 24%;
+             grid-gap: 10px;
+             
+        }
+         
+        
+        #opis{
+            z-index: 2;
+        }
+        
+        #popkorn{
+            max-width: 20%;
+            position: absolute;
+            left: 10%;
+        }
+        #wybranyfilm{
+           position: relative;
+           z-index: 2;
+        
+        }
+
+       
+        
+        
+        
+       
+        
+        /* button{
+            border: 1px solid gray;
+        } */
+        img{
+           
+            max-width: 80vh;
+            height: auto;
+        }
+        h2{
+            font-size:3em;
+        }
+        #containerPoz{
+            margin-top: 40px;
+            display:grid;
+            grid-template-columns: 30% 30% 30%;
+            grid-gap:20px; 
+            position: relative;
+            padding-bottom: 20px;
+            z-index: 1;
+           
+
+        }
+        #rezerwuj{
+            margin-top: 40px;
+            display:grid;
+            grid-template-columns: 30% 30% 30%;
+            grid-gap:20px; 
+            position: relative;
+        }
+       #welcome{
+           font-size: 24px;
+           position: absolute;
+           top:50%;
+           left:30%;
+       }
+       
+
+        #containerPoz img{
+            width: 30%;
+            height: auto;
+            cursor: pointer;
+        } 
+        /* #containerPoz img:hover{
+            width: 40%;
+            height: auto;
+            cursor: pointer;
+        }  
+        */
+        
+        
+        .box:hover { color:rgb(95, 22, 22); 
+            font-weight: 700;
+        border-bottom: solid 1px rgb(87, 128, 240);
+        }
+        
+/* #kinocena{ */
+    /* display:grid;
+            grid-template-columns: 60% 20%;
+} */
+       span{
+           padding:20px 10px;
+           font-size: 1.1em;
+     
+       }
+       #all{
+           visibility: hidden;
+        
+       }
+
+      #cena {
+         
+        
+
+font-size: 20px;
+
+         
+     } 
+     #napis{
+         font-size: 12px;
+         padding: 20px;
+     }
+     #wybranyfilm{
+         font-size: 24px;
+         font-weight: 700;
+         padding-bottom: 20px;
+     }
+     #kup {
+text-decoration: none;
+color:black;
+margin-top: 20px;
+
+     }
+     #kup:hover{
+         color:blue;
+         font-weight: 800;
+     }
+       

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- <div id="div1"></div>
+Cena biletów:<div id="cena">najpierw wskaz miejsca!</div>
+
+
+<div id="wypisanie"></div> -->
+
+    <!-- panel logowania -->
+   
+    <div class='wrapper'>
+        <form onsubmit="return validate()" id='form'>
+                Imię i nazwisko: <input type="text" name="name" id="name"/><br />
+          <div id='nameinfo' class='color'></div>
+        
+                
+         
+                E-mail: <input type="text" name="email" id="email"/> <br />
+           <div id='emailinfo' class='color'></div>
+          
+            <input type="submit" value="zatwierdż" id='button'>
+            <div id='info'></div>
+        
+         
+        <!--   <div id='info2'></div> -->
+            </form>
+        </div>
+
+<div class='formularz'>
+    <h2>Najlepsze kina w Polsce...</h2>
+
+    <div class="wrapper">
+
+        <div id="poznan" class='box' onclick="cityPoz()">Poznań</div>
+        <div id="krak" class='box' onclick="cityKrak()">Kraków</div>
+        <div id="kat" class='box' onclick="cityKat()">Katowice</div>
+        <div id="pila" class='box' onclick="cityPila()">Piła</div>
+
+    </div>
+    <!-- <img src="tlo1.png" alt=""> -->
+    <p id="jeden" onclick="cinemaPoznan()"></p>
+    <p id="dwa" onclick="cinemaKrak()"></p>
+    <p id="trzy" onclick="cinemaKat()"></p>
+    <p id="cztery" onclick="cinemaPila()"></p>
+
+    <div id="containerPoz">
+            <div id="kurier" ></div>
+            <div id="marwel"></div>
+            <div id="ciemno"></div>
+        </div>
+    
+    
+    <div id="containerKrak">
+            <div id="tomy"></div>
+            <div id="jakwytresowac"></div>
+            <div id="caleszczescie"></div>
+        </div>
+    
+    
+  
+    <div id="containerKat">
+            <div id="corgi"></div>
+            <div id="mia"></div>
+            <div id="jakwytresowac1"></div>
+        </div>
+        
+    <div id="containerPila">
+            <div id="zubrpompik"></div>
+            <div id="caleszcze"></div>
+            <div id="marwel1"></div>
+        </div>
+        <br>
+        <div id="cena"></div>
+
+    <!-- <div id="podsuma"></div> -->
+
+    <div id="napis"></div><br>
+   
+    <div id="div2"></div>
+
+    <!-- <img src="mapa.png" alt=""> -->
+    <div id="cena"></div>
+</div>
+
+
+
+    <script src="json.js"></script>
+    <script src="proj.js"></script>
+
+</body>
+
+</html>
