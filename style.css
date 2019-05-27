@@ -85,12 +85,9 @@ float:left;
        
        
         #test{
-            position: absolute;
-            top:40%;
-          width:100%;
-          margin:0 auto;
-          padding: 0;
-            font-size: 24px;
+           
+      padding-top:30px;
+            font-size: 22px;
            color:red;
         
 
@@ -104,14 +101,14 @@ float:left;
       
         .wrapper1 {
            
-                
-    
             
            visibility: hidden;
-                color:green;
-             display: grid;
+              
+             /* display: grid;
+            
              grid-template-columns: 24% 24% 24% 24%;
-             grid-gap: 10px;
+             grid-gap: 10px; */
+             /* margin-top:20%; */
              
         }
          
@@ -149,14 +146,25 @@ float:left;
             font-size:3em;
         }
         #containerPoz{
-            margin-top: 40px;
-            display:grid;
+            width:80%;
+           margin:0 auto;
+           
+
+          
+            /* display:grid;
             grid-template-columns: 30% 30% 30%;
             grid-gap:20px; 
             position: relative;
             padding-bottom: 20px;
             z-index: 1;
-           
+            */
+
+        }
+        #containerPoz img{
+
+float: left;
+
+padding: 1%;
 
         }
         #rezerwuj{
@@ -172,6 +180,9 @@ float:left;
            top:50%;
            left:30%;
        }
+       #podsumowanie{
+           padding-top: 1%;
+       }
        
 
         #containerPoz img{
@@ -186,10 +197,12 @@ float:left;
         }  
         */
         
-        
+        .box{
+            border-bottom: solid 1px rgb(87, 128, 240);
+        }
         .box:hover { color:rgb(95, 22, 22); 
             font-weight: 700;
-        border-bottom: solid 1px rgb(87, 128, 240);
+        
         }
         
 /* #kinocena{ */
@@ -216,12 +229,13 @@ font-size: 20px;
      } 
      #napis{
          font-size: 12px;
-         padding: 20px;
+         font-style: italic;
+      
      }
      #wybranyfilm{
-         font-size: 24px;
+         font-size: 32px;
          font-weight: 700;
-         padding-bottom: 20px;
+         padding-bottom: 30px;
      }
      #kup {
 text-decoration: none;

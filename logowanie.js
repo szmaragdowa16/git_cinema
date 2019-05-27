@@ -52,6 +52,7 @@ function validate() {
 
 
                 document.querySelector('.wrapper1').style.visibility = 'hidden'
+                document.getElementById('cena').style.visibility = 'hidden'
                 document.getElementById('zalogowany').style.visibility = 'visible'
                 document.getElementById('zalogowany').innerHTML = img4 + " <br>" + " cdn..."
                 document.getElementById('zalogowany').style.fontSize='38px';
@@ -59,7 +60,7 @@ function validate() {
                
                 document.getElementById('welcome').style.visibility = 'hidden'
                 document.getElementById('tlo').style.display = 'none'
-    
+            
     
     
                 document.getElementById('all').style.visibility = 'visible'
@@ -76,4 +77,7 @@ function validate() {
         }
         }
        
-        
+       var znikanie =document.getElementById('button')
+       znikanie.addEventListener('click', function(){
+        document.getElementById('kup').innerHTML=""
+       })
