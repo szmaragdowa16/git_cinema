@@ -1,76 +1,3 @@
-// function validate() {
-
-// var mydata = JSON.parse(login);
-//     var liczba = Object.keys(mydata).length
-//     for (var i = 0; i < liczba; i++) {
-//         var name = document.getElementById('name').value
-
-
-
-//         var text = 'Wpisz poprawne hasło';
-//         var text1 = '';
-//         var check = /^(?=.*\d)(?=.*[a-z])(?=.*[\!\@\#\$\%\^\&\*\(\)\_\+\-\=])(?=.*[A-Z])(?!.*\s).{8,}$/;
-
-
-//         if (check.test(name)) {
-
-//             document.getElementById('test').innerHTML = text1;
-
-
-//         } else {
-//             document.getElementById('test').innerHTML = text;
-//             console.log('nie')
-
-//             return false;
-
-//         }
-
-
-
-
-
-//         var email = document.getElementById('email').value
-
-//         var text = 'Wpisz poprawny email';
-//         var text1 = '';
-//         var check = /^[0-9a-zA-Z_.-]+@[0-9a-zA-Z.-]+\.[a-zA-Z]{2,3}$/;
-
-//         if (check.test(email)) {
-//             document.getElementById('test').innerHTML = text1;
-
-//         } else {
-//             document.getElementById('test').innerHTML = text;
-//             return false;
-//         }
-
-
-
-//         if (mydata[i].password == name && mydata[i].mail == email) {
-
-//             document.querySelector('.wrapper1').style.visibility = 'hidden'
-//             document.getElementById('zalogowany').style.visibility = 'visible'
-//             document.getElementById('zalogowany').innerHTML = 'Jesteś zalogowany. Witamy'
-//             document.getElementById('welcome').style.visibility = 'hidden'
-//             document.getElementById('tlo').style.display = 'none'
-
-
-
-//             document.getElementById('all').style.visibility = 'visible'
-
-
-
-//         }
-
-//     }
-//     }
-
-
-
-
-
-
-
-
 function cityPoz() {
 
     var mydata = JSON.parse(filmPoz);
@@ -155,6 +82,18 @@ function marwel() {
     document.getElementById('marwel').style.opacity = "1"
     document.getElementById('kurier').style.display = "none"
          document.getElementById('ciemno').style.display = "none"
+         var kup=document.getElementById('kup')
+kup.addEventListener("click", function(){
+    document.getElementById('kurier').style.visibility = "hidden"
+    document.getElementById('ciemno').style.visibility = "hidden"
+
+ 
+    document.querySelector('.wrapper1').style.visibility =  "visible"
+
+    document.getElementById("div2").style.display = "none"
+    document.getElementById('kup').innerHTML="Zaloguj sie, aby kupić bilet/y"
+})
+
 }
 
 function ciemno() {
@@ -162,6 +101,18 @@ function ciemno() {
     document.getElementById('ciemno').style.opacity = "1"
     document.getElementById('marwel').style.display = "none"
          document.getElementById('kurier').style.display = "none"
+         var kup=document.getElementById('kup')
+kup.addEventListener("click", function(){
+    document.getElementById('marwel').style.visibility = "hidden"
+    document.getElementById('kurier').style.visibility = "hidden"
+
+ 
+    document.querySelector('.wrapper1').style.visibility =  "visible"
+
+    document.getElementById("div2").style.display = "none"
+    document.getElementById('kup').innerHTML="Zaloguj sie, aby kupić bilet/y"
+})
+
 }
 
 
@@ -194,7 +145,7 @@ function cinemaPoznan() {
     for (var i = 0; i < iloscWierszy; i++) {
         for (var j = 0; j < iloscKolumn; j++) {
             
-        tablica[i][j] = img + ' ' +i + "/" + j 
+        tablica[i][j] = img +i + '/' + j 
         
         
         }
@@ -209,7 +160,7 @@ function cinemaPoznan() {
     }
     //wyświetlenie napisu na stronie
 
-
+    document.getElementById("kwadrat").style.display = "none"
 
     document.getElementById("div2").innerHTML = napis;
     document.getElementById("napis").innerHTML = "Kliknij i wybierz miejsce";
@@ -226,7 +177,7 @@ function cinemaPoznan() {
         element.style.height = '60px';
         element.style.width = '60px';
 
-        element.style.border ="solid 1px grey";
+        element.style.border ="solid 1px silver";
         element.style.paddingLe ="10px";
         element.style.backgroundColor = 'transparent';
 
@@ -259,6 +210,7 @@ function cinemaPoznan() {
                 document.getElementById("kup").innerHTML = napis2
                 document.getElementById("miejscezero").innerHTML = napis3
                 document.getElementById("wrapper1").style.visibility = "visible"
+               
             } else {
         
                 element.style.backgroundColor = "red"

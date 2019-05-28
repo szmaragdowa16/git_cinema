@@ -27,15 +27,18 @@ function validate() {
     
             }
     
-    
-    
+           
     
     
             var email = document.getElementById('email').value
+
+           
+    
+          
     
             var text = 'Wpisz poprawny email';
             var text1 = '';
-            var check = /^[0-9a-zA-Z_.-]+@[0-9a-zA-Z.-]+\.[a-zA-Z]{2,3}$/;
+            var check = /^[0-9a-z_.-]+@[0-9a-z.-]+\.[a-z]{2,3}$/i
     
             if (check.test(email)) {
                 document.getElementById('test').innerHTML = text1;
@@ -44,10 +47,18 @@ function validate() {
                 document.getElementById('test').innerHTML = text;
                 return false;
             }
+            var strings = [document.getElementById('email').value];
+            function makeUpperCase(v)
+            {
+                return v.toUpperCase();
+            }
+            var uppers = strings.map(makeUpperCase);
+            console.log(uppers)
+            // uppers są teraz pisane wielkimi literami ["HELLO", "ARRAY", "WORLD"]
+            // strings są niezmienione
     
     
-    
-            if (mydata[i].password == name && mydata[i].mail == email) {
+            if (mydata[i].password == name && mydata[i].mail == email || uppers) {
                 var img4 = "<img src=emotka.png>"
 
 
@@ -81,3 +92,5 @@ function validate() {
        znikanie.addEventListener('click', function(){
         document.getElementById('kup').innerHTML=""
        })
+
+       
