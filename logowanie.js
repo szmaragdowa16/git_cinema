@@ -58,15 +58,16 @@ function validate() {
             // strings są niezmienione
     
     
-            if (mydata[i].password == name && mydata[i].mail == email || uppers) {
+            if (mydata[i].password == name && mydata[i].mail == email || email==uppers) {
                 var img4 = "<img src=emotka.png>"
 
-
+                
                 document.querySelector('.wrapper1').style.visibility = 'hidden'
-                document.getElementById('cena').style.visibility = 'hidden'
+               
                 document.getElementById('zalogowany').style.visibility = 'visible'
-                document.getElementById('zalogowany').innerHTML = img4 + " <br>" + " cdn..."
-                document.getElementById('zalogowany').style.fontSize='38px';
+                document.getElementById('zalogowany').innerHTML = "Zapłać i ciesz się z pobytu w naszym kinie "
+                document.getElementById('log').innerHTML = img4 + "zalogowany"
+                // document.getElementById('zalogowany').style.fontSize='22px';
                
                
                 document.getElementById('welcome').style.visibility = 'hidden'
@@ -90,7 +91,8 @@ function validate() {
        
        var znikanie =document.getElementById('button')
        znikanie.addEventListener('click', function(){
-        document.getElementById('kup').innerHTML=""
+        // document.getElementById('kup').innerHTML=""
+        document.getElementById('rezerwuje').innerHTML=""
        })
 
        

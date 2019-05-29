@@ -1,8 +1,8 @@
 
 function cityKat() {
     var mydata = JSON.parse(filmPoz);
-    document.getElementById('kat').style.color = 'red';
-    document.getElementById('kat').style.fontSize = '32px';
+    // document.getElementById('kat').style.color = 'red';
+    // document.getElementById('kat').style.fontSize = '32px';
 
     // ?sprawdzamy ile mamy obiektów
     var liczba = Object.keys(mydata).length
@@ -37,7 +37,7 @@ function cityKat() {
 }
 
 function corgi() {
-    document.getElementById('wybranyfilm').innerHTML = "CORGI"
+    document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: CORGI psiak Królowej"
     document.getElementById('corgi').style.opacity = "1"
   
   document.getElementById('mia').style.display="none"
@@ -51,14 +51,15 @@ kup.addEventListener("click", function(){
     document.querySelector('.wrapper1').style.visibility =  "visible"
 
     document.getElementById("div2").style.display = "none"
-    document.getElementById('kup').innerHTML="Zaloguj sie, aby kupić bilet/y"
+    document.getElementById('rezerwuje').innerHTML="Zaloguj sie, aby kupić bilet/y"
+              document.getElementById('kup').style.visibility="hidden"
 })
 
 
 }
 
 function mia() {
-    document.getElementById('wybranyfilm').innerHTML = "MIA I BIAŁY LEW"
+    document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: MIA I BIAŁY LEW"
     document.getElementById('mia').style.opacity = "1"
   
   document.getElementById('corgi').style.display="none"
@@ -72,12 +73,13 @@ kup.addEventListener("click", function(){
     document.querySelector('.wrapper1').style.visibility =  "visible"
 
     document.getElementById("div2").style.display = "none"
-    document.getElementById('kup').innerHTML="Zaloguj sie, aby kupić bilet/y"
+    document.getElementById('rezerwuje').innerHTML="Zaloguj sie, aby kupić bilet/y"
+              document.getElementById('kup').style.visibility="hidden"
 })
 }
 
 function jakwytresowac1() {
-    document.getElementById('wybranyfilm').innerHTML = "JAK WYTRESOWAĆ SMOKA III"
+    document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: JAK WYTRESOWAĆ SMOKA III"
     document.getElementById('jakwytresowac1').style.opacity = "1"
   
   document.getElementById('mia').style.display="none"
@@ -96,7 +98,7 @@ kup.addEventListener("click", function(){
 }
 function cinemaKat() {
     var iloscKolumn = 5;
-    var iloscWierszy = 8;
+    var iloscWierszy = 6;
     var napis = "";
     var img = "<svg></svg>"
     var tablica = [];
@@ -138,8 +140,8 @@ function cinemaKat() {
 
     elements.forEach(function (element) {
        
-        element.style.height = '60px';
-        element.style.width = '60px';
+        element.style.height = '40px';
+        element.style.width = '40px';
 
         element.style.border ="solid 1px silver";
         element.style.paddingLe ="10px";
@@ -169,8 +171,8 @@ function cinemaKat() {
                     var napis3=""
                 }
                
-                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " = " + sum + "zł" + " " +napis1;
-                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " = " + sum + "zł"+ " " +napis1;
+                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " +" wynosi " + sum + "zł"+'<br>' + " " +napis1;
+                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " +" wynosi " + sum + "zł"+'<br>' + " " +napis1;
                 document.getElementById("kup").innerHTML = napis2
                 document.getElementById("miejscezero").innerHTML = napis3
                 document.getElementById("wrapper1").style.visibility = "visible"
@@ -203,8 +205,8 @@ function cinemaKat() {
                     var napis3=""
                 }
                
-                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " = " + sum + "zł" + " " +napis1;
-                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " = " + sum + "zł"+ " " +napis1;
+                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " wynosi " + sum + "zł"+'<br>' + " " +napis1;
+                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " wynosi " + sum + "zł"+'<br>' + " " +napis1;
                 document.getElementById("kup").innerHTML = napis2
                 document.getElementById("miejscezero").innerHTML = napis3
                

@@ -2,8 +2,8 @@
 function cityKrak() {
     
     var mydata = JSON.parse(filmPoz);
-    document.getElementById('krak').style.color = 'red';
-    document.getElementById('krak').style.fontSize = '32px';
+    // document.getElementById('krak').style.color = 'red';
+    // document.getElementById('krak').style.fontSize = '32px';
 
     // ?sprawdzamy ile mamy obiektów
     var liczba = Object.keys(mydata).length
@@ -41,7 +41,7 @@ function cityKrak() {
 }
 
 function tomy() {
-    document.getElementById('wybranyfilm').innerHTML = "TO MY"
+    document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: TO MY"
     document.getElementById('tomy').style.opacity = "1"
     document.getElementById('jakwytresowac').style.display="none"
     document.getElementById('caleszczescie').style.display="none"
@@ -54,12 +54,13 @@ kup.addEventListener("click", function(){
     document.querySelector('.wrapper1').style.visibility =  "visible"
 
     document.getElementById("div2").style.display = "none"
-    document.getElementById('kup').innerHTML="Zaloguj sie, aby kupić bilet/y"
+    document.getElementById('rezerwuje').innerHTML="Zaloguj sie, aby kupić bilet/y"
+              document.getElementById('kup').style.visibility="hidden"
 })
 }
 
 function jakwytresowac() {
-    document.getElementById('wybranyfilm').innerHTML = "JAK WYTRESOWAĆ SMOKA"
+    document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: JAK WYTRESOWAĆ SMOKA"
     document.getElementById('jakwytresowac').style.opacity = "1"
     document.getElementById('tomy').style.display="none"
     document.getElementById('caleszczescie').style.display="none"
@@ -72,13 +73,14 @@ kup.addEventListener("click", function(){
     document.querySelector('.wrapper1').style.visibility =  "visible"
 
     document.getElementById("div2").style.display = "none"
-    document.getElementById('kup').innerHTML="Zaloguj sie, aby kupić bilet/y"
+    document.getElementById('rezerwuje').innerHTML="Zaloguj sie, aby kupić bilet/y"
+              document.getElementById('kup').style.visibility="hidden"
 })
 }
 
 
 function caleszczescie() {
-    document.getElementById('wybranyfilm').innerHTML = "CAŁE SZCZĘŚCIE"
+    document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: CAŁE SZCZĘŚCIE"
     document.getElementById('caleszczescie').style.opacity = "1"
     document.getElementById('jakwytresowac').style.display="none"
     document.getElementById('tomy').style.display="none"
@@ -174,8 +176,8 @@ function cinemaKrak() {
                     var napis3=""
                 }
                
-                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " = " + sum + "zł" + " " +napis1;
-                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " = " + sum + "zł"+ " " +napis1;
+                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " +" wynosi " + sum + "zł"+'<br>' + " " +napis1;
+                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " +" wynosi " + sum + "zł"+'<br>' + " " +napis1;
                 document.getElementById("kup").innerHTML = napis2
                 document.getElementById("miejscezero").innerHTML = napis3
                 document.getElementById("wrapper1").style.visibility = "visible"
@@ -208,8 +210,8 @@ function cinemaKrak() {
                     var napis3=""
                 }
                
-                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " = " + sum + "zł" + " " +napis1;
-                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " = " + sum + "zł"+ " " +napis1;
+                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " wynosi " + sum + "zł"+'<br>' + " " +napis1;
+                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " wynosi " + sum + "zł"+'<br>' + " " +napis1;
                 document.getElementById("kup").innerHTML = napis2
                 document.getElementById("miejscezero").innerHTML = napis3
                

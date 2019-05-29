@@ -2,8 +2,8 @@
         function cityPila() {
             var mydata = JSON.parse(filmPoz);
         
-            document.getElementById('pila').style.color = 'red';
-            document.getElementById('pila').style.fontSize = '32px';
+            // document.getElementById('pila').style.color = 'red';
+            // document.getElementById('pila').style.fontSize = '32px';
             // ?sprawdzamy ile mamy obiektów
             var liczba = Object.keys(mydata).length
             var img1 = "<img src= zubrpompik.jpeg>"
@@ -18,7 +18,7 @@
                     // wypelniam nowo utworzony element trascia
                     li.innerText = mydata[i].title + " " + "/"
                     // // dodaje stylowanie
-                    // li.style.color = 'grey';
+                    // li.style.color = 'grey'
         
                     // // dodaje jakies zdarzenie do nowo utworzonego elementu
         
@@ -40,7 +40,7 @@
         }
         
         function zubrpompik() {
-            document.getElementById('wybranyfilm').innerHTML = "ZUBR POMPIK"
+            document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: ZUBR POMPIK"
             document.getElementById('zubrpompik').style.opacity = "1"
   
             document.getElementById('caleszcze').style.display="none"
@@ -54,13 +54,14 @@
               document.querySelector('.wrapper1').style.visibility =  "visible"
           
               document.getElementById("div2").style.display = "none"
-              document.getElementById('kup').innerHTML="Zaloguj sie, aby kupić bilet/y"
+              document.getElementById('rezerwuje').innerHTML="Zaloguj sie, aby kupić bilet/y"
+              document.getElementById('kup').style.visibility="hidden"
           })
           
         }
         
         function caleszczescie1() {
-            document.getElementById('wybranyfilm').innerHTML = "CAŁE SZCZĘŚCIE"
+            document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: CAŁE SZCZĘŚCIE"
             document.getElementById('caleszcze').style.opacity = "1"
   
             document.getElementById('zubrpompik').style.display="none"
@@ -74,12 +75,13 @@
               document.querySelector('.wrapper1').style.visibility =  "visible"
           
               document.getElementById("div2").style.display = "none"
-              document.getElementById('kup').innerHTML="Zaloguj sie, aby kupić bilet/y"
+              document.getElementById('rezerwuje').innerHTML="Zaloguj sie, aby kupić bilet/y"
+              document.getElementById('kup').style.visibility="hidden"
           })
         }
         
         function marwel1() {
-            document.getElementById('wybranyfilm').innerHTML = "KAPITAN MARWEL"
+            document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: KAPITAN MARWEL"
             document.getElementById('marwel1').style.opacity = "1"
   
             document.getElementById('caleszcze').style.display="none"
@@ -171,8 +173,8 @@
                     var napis3=""
                 }
                
-                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " = " + sum + "zł" + " " +napis1;
-                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " = " + sum + "zł"+ " " +napis1;
+                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " +" wynosi " + sum + "zł"+'<br>' + " " +napis1;
+                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " +" wynosi " + sum + "zł"+'<br>' + " " +napis1;
                 document.getElementById("kup").innerHTML = napis2
                 document.getElementById("miejscezero").innerHTML = napis3
                 document.getElementById("wrapper1").style.visibility = "visible"
@@ -205,8 +207,8 @@
                     var napis3=""
                 }
                
-                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " = " + sum + "zł" + " " +napis1;
-                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " = " + sum + "zł"+ " " +napis1;
+                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " wynosi " + sum + "zł"+'<br>' + " " +napis1;
+                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " wynosi " + sum + "zł"+'<br>' + " " +napis1;
                 document.getElementById("kup").innerHTML = napis2
                 document.getElementById("miejscezero").innerHTML = napis3
                

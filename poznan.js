@@ -3,8 +3,8 @@ function cityPoz() {
     var mydata = JSON.parse(filmPoz);
 
 
-    document.getElementById('poznan').style.color = 'red';
-    document.getElementById('poznan').style.fontSize = '32px';
+    // document.getElementById('poznan').style.color = 'red';
+    // document.getElementById('poznan').style.fontSize = '32px';
     // document.getElementById('miniaturka').style.width='80%';
 
     // ?sprawdzamy ile mamy obiektów
@@ -67,7 +67,8 @@ kup.addEventListener("click", function(){
     document.querySelector('.wrapper1').style.visibility =  "visible"
 
     document.getElementById("div2").style.display = "none"
-    document.getElementById('kup').innerHTML="Zaloguj sie, aby kupić bilet/y"
+    document.getElementById('rezerwuje').innerHTML="Zaloguj sie, aby kupić bilet/y"
+              document.getElementById('kup').style.visibility="hidden"
 })
 
 
@@ -91,7 +92,8 @@ kup.addEventListener("click", function(){
     document.querySelector('.wrapper1').style.visibility =  "visible"
 
     document.getElementById("div2").style.display = "none"
-    document.getElementById('kup').innerHTML="Zaloguj sie, aby kupić bilet/y"
+    document.getElementById('rezerwuje').innerHTML="Zaloguj sie, aby kupić bilet/y"
+              document.getElementById('kup').style.visibility="hidden"
 })
 
 }
@@ -205,8 +207,8 @@ function cinemaPoznan() {
                     var napis3=""
                 }
                
-                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " = " + sum + "zł" + " " +napis1;
-                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " = " + sum + "zł"+ " " +napis1;
+                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " +" wynosi " + sum + "zł"+'<br>' + " " +napis1;
+                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " +" wynosi " + sum + "zł"+'<br>' + " " +napis1;
                 document.getElementById("kup").innerHTML = napis2
                 document.getElementById("miejscezero").innerHTML = napis3
                 document.getElementById("wrapper1").style.visibility = "visible"
@@ -239,8 +241,8 @@ function cinemaPoznan() {
                     var napis3=""
                 }
                
-                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " = " + sum + "zł" + " " +napis1;
-                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " = " + sum + "zł"+ " " +napis1;
+                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " wynosi " + sum + "zł"+'<br>' + " " +napis1;
+                document.getElementById("cena").innerHTML = 'Twoja kwota do zapłaty' + " " + " wynosi " + sum + "zł"+'<br>' + " " +napis1;
                 document.getElementById("kup").innerHTML = napis2
                 document.getElementById("miejscezero").innerHTML = napis3
                
